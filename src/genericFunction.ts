@@ -18,9 +18,24 @@ let reslult2 = createArrayWithGeneric("mostafa",false);
 // console.log(reslult2);
 
 
-let studentOfCourse = <T>(studentInfo:T) =>{
+let addstudentToCourse = <T>(studentInfo:T) =>{
     return {
         course: "NextLevel",
         ...studentInfo
     }
 }
+let student1 = {
+    id:123,
+    name:"Mostafa",
+    hasPen:true
+};
+let student2 ={
+    id: 321,
+    name:"Jankar vai",
+    hasPern:true,
+    isMarried: true
+}
+
+
+let reslult = addstudentToCourse(student2);
+console.log(reslult);
